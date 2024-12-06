@@ -1,0 +1,20 @@
+meta {
+  name: create reservation
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/reservations
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "startDate": "1/1/2001",
+    "endDate": "2/2/2002",
+    "placeId": "456",
+    "invoiceId": "789"
+  }
+}

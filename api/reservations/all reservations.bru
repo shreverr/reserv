@@ -1,0 +1,20 @@
+meta {
+  name: all reservations
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/reservations
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "startDate": "1/1/2001",
+    "endDate": "2/2/2002",
+    "placeId": "456",
+    "invoiceId": "789"
+  }
+}
