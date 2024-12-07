@@ -27,3 +27,5 @@ services:
 
   mongo:
     image: mongo
+    volumes:
+        - ./mongodb_data:/data/db # Persist MongoDB data
