@@ -28,4 +28,6 @@ services:
   mongo:
     image: mongo
     volumes:
-        - ./mongodb_data:/data/db # Persist MongoDB data
+      - ./mongodb_data:/data/db # Persist MongoDB data
+    ports:
+      - '4949:27017'
